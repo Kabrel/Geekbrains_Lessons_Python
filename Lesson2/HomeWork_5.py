@@ -14,7 +14,8 @@ new_element = int(input("Введите новый элемент рейтинг
 if new_element in my_list:
     position_index = my_list.index(new_element) + my_list.count(new_element)
     my_list.insert(position_index, new_element)
+    print(my_list)
 else:
     my_list.append(new_element)
+    print(sorted(my_list, reverse=True))
 
-print(my_list)
