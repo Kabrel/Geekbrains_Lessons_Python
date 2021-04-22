@@ -17,7 +17,6 @@ while list_elem_count > 0:
 print(my_list)
 
 for index in range(0, len(my_list)-1, 2):
-    print(index)
     my_list[index], my_list[index+1] = my_list[index+1], my_list[index]
 
 print(my_list)

@@ -18,4 +18,3 @@ if new_element in my_list:
 else:
     my_list.append(new_element)
     print(sorted(my_list, reverse=True))
-
