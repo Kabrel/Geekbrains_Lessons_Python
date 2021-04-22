@@ -14,9 +14,9 @@ while list_elem_count > 0:
     my_list.append(str(input(f"Введите значение для списка. Осталось: {list_elem_count}. ")))
     list_elem_count -= 1
 
-print(my_list)
+print(my_list)  # Введенный пользователем список
 
 for index in range(0, len(my_list)-1, 2):
     my_list[index], my_list[index+1] = my_list[index+1], my_list[index]
 
-print(my_list)
+print(my_list)  # Итоговый результат
