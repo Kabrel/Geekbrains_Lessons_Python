@@ -22,9 +22,12 @@ print(my_func(input_x, input_y))
 def my_func_2(x, y):
     """ Решение с помощью цикла."""
     x_exp = x
-    while y < -1:
-        x_exp *= x
-        y += 1
+    if y < 0:
+        while y < -1:
+            x_exp *= x
+            y += 1
+    else:
+        return "Не верно задан второй параметр"
     result = 1/x_exp
     return result
 
