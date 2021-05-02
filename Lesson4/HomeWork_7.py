@@ -10,7 +10,6 @@
 from itertools import count
 
 n = int(input("Факториал до какого числа вычислить?: "))
-index = 1
 
 
 def fact(value):
@@ -20,6 +19,5 @@ def fact(value):
         yield from (el1 * el2 for el1, el2 in zip(fact(value - 1), count(2)))
 
 
-for el in fact(n):
+for index, el in enumerate(fact(n), start=1):
     print(f"{index}! = {el}")
-    index += 1
